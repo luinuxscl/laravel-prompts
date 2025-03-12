@@ -1,0 +1,29 @@
+{
+  "name": "luinuxscl/laravel-prompts",
+  "description": "Package para almacenar y combinar prompts dinámicamente en Laravel, con integración a LLM.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luis Sepulveda",
+      "email": "lsepulveda@outlook.com",
+      "homepage": "https://like.cl",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Luinuxscl\\LaravelPrompts\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "illuminate/support": "^11.0|^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Luinuxscl\\LaravelPrompts\\PromptsServiceProvider"
+      ]
+    }
+  }
+}
