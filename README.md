@@ -90,24 +90,11 @@ $promptConDatos = $promptService->integratePrompts(
 // Resultado final: "Hola, mi nombre es Luis. Adicionalmente, Tengo 30 años y vivo en Santiago."
 ```
 
-### Integración con LLMs
-
-```php
-use Luinuxscl\LaravelPrompts\Services\LLMClients\OpenAIClient;
-
-// Crear instancia del cliente LLM
-$openAIClient = new OpenAIClient();
-
-// Usar el servicio para enviar el prompt al LLM
-$respuesta = $promptService->processPromptWithLLM($promptConDatos, $openAIClient);
-```
-
 ## Características
 
 - Almacenamiento de prompts en base de datos
 - Combinación dinámica de prompts usando placeholders
 - Protección contra eliminación de prompts en uso
-- Integración con diferentes proveedores de LLM
 - Configuración flexible a través de archivo de configuración
 
 ## Contribuciones
